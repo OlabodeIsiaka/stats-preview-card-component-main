@@ -20,21 +20,18 @@
 body {
 	font-size: 15px;
 	height: 100vh;
+
+
     background-color: hsl(var(---main-background))
 }
 
 .container {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
+margin: 2em auto;
 }
 .card {
-	max-width: 92%;
+	max-width: 90%;
 	margin: 0 auto;
-	filter: blur(0.5px);
+	filter: blur(0.2px);
 }
 .content {
 	width: 100%;
@@ -42,7 +39,7 @@ body {
 	text-align: center;
 	padding: 2em 1.5em 0.7em 1.5em;
 	border-radius: 0 0 0.5rem 0.5rem;
-	/* margin-bottom: -1em; */
+
 }
 .img-div {
 	position: relative;
@@ -117,8 +114,12 @@ span {
     }
 }
 @media screen and (min-width: 1440px) {
-	* {
-		box-sizing: border-box;
+	.container{
+			 display: flex;
+			 flex-direction: column;
+			 height: 100vh;
+		align-items: center;
+	justify-content: center; 
 	}
 	.card {
 		display: flex;
@@ -141,12 +142,11 @@ span {
 	.main-para {
 		font-size: 0.7rem;
 		word-spacing: 0px;
-		/* text-align: justify; */
 		margin-bottom: 5em;
 		line-height: 1.7;
 	}
 	.main-h {
-		/* text-align: justify; */
+		
 		font-size: 2rem;
 		margin-bottom: 0.8em;
 	}
